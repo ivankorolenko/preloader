@@ -1,0 +1,92 @@
+/*============== General ===============*/
+/*======================================*/
+:root{
+    --bg-color: rgb(238, 237, 236);
+    --item-color: rgb(77, 98, 119);
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*================ Grid ================*/
+/*======================================*/
+.grid-block {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh;
+    background-color: var(--bg-color);
+}
+.grid-block > div {
+    width: 150px;
+    height: 150px;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4 ,1fr);
+    grid-gap: 1rem;
+}
+.item {
+    background-color: var(--item-color);
+    border-radius: 100%;
+}
+
+/*============== Animation =============*/
+/*======================================*/
+@keyframes preloading {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.3;
+    }
+}
+.first-line {
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-name: preloading;
+    animation-iteration-count: infinite;
+}
+.secound-line {
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-name: preloading;
+    animation-iteration-count: infinite;
+    animation-delay: 0.1s;
+}
+.third-line {
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-name: preloading;
+    animation-iteration-count: infinite;
+    animation-delay: 0.2s;
+}
+.fourth-line {
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-name: preloading;
+    animation-iteration-count: infinite;
+    animation-delay: 0.3s;
+}
+.fifth-line {
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-name: preloading;
+    animation-iteration-count: infinite;
+    animation-delay: 0.4s;
+}
+.sixth-line {
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-name: preloading;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+}
+.seventh-line {
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-name: preloading;
+    animation-iteration-count: infinite;
+    animation-delay: 0.6s;
+}
